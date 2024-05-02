@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let a of product">
+            <div class="col-md-4" *ngIf="a.productName=='Tv'">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="a.productImage" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">{{a.productDescription}}</p>
+                        <h4 class="card-text">{{a.productCompany}}</h4>
+                        <p class="card-text">{{a.productPrice | currency:'INR'}}</p>
+                    </div>
+                    <!-- <div>
+                        <button class="btn btn-warning" > <i class="fas fa-shopping-cart"></i> Add to cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div> -->
+                </div>
+            </div>
+        </ng-container>  
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<p>addproducts works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Add products</h1>
+            <div class="form-group">
+                <label class="form-label">product Name</label>
+                <input type="text" class="form-control" [(ngModel)]="productName">
+            </div>
+            <div class="form-group">
+                <label class="form-label">product Company</label>
+                <input type="text" class="form-control" [(ngModel)]="productCompany">
+            </div>
+            <div class="form-group">
+                <label class="form-label">product Price</label>
+                <input type="text" class="form-control" [(ngModel)]="productPrice">
+            </div>
+            <div class="form-group">
+                <label class="form-label">product Images</label>
+                <input type="text" class="form-control" [(ngModel)]="productImage">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" (click)="addproducts()">Submit</button>
+                <button class="btn btn-warning">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

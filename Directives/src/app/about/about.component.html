@@ -1,0 +1,51 @@
+<p>Koushik</p>
+<div [ngSwitch]="day">
+  <div *ngSwitchCase="0">
+    <h1>Sunday</h1>
+  </div>
+  <div *ngSwitchCase="1">
+    <h2>Monday</h2>
+  </div>
+  <div *ngSwitchCase="2">
+    <h1>Tuesday</h1>
+  </div>
+  <div *ngSwitchCase="3">
+    <h1>Wednesday</h1>
+  </div>
+  <div *ngSwitchDefault>
+    <h1>Invalid Day</h1>
+  </div>
+</div>
+
+<table class="table table-bordered">
+  <tr class="bg-warning">
+    <td>Mobile Name</td>
+    <td>Mobile Company</td>
+    <td>Price</td>
+    <td>Image</td>
+  </tr>
+  <tr *ngFor="let m of mobiles">
+    <td>{{ m.mobileName }}</td>
+    <td>{{ m.mobileCompany }}</td>
+    <td>{{ m.mobilePrice|currency:"USD" }}</td>
+    <td><img [src]="m.mobileImage" height="100px" width="100px"></td>
+  </tr>
+  <tr *ngFor="let m of mobiles1">
+    <td>{{ m.mobileName }}</td>
+    <td>{{ m.mobileCompany }}</td>
+    <td>{{ m.mobilePrice|currency:"USD" }}</td>
+    <td><img [src]="m.mobileImage" height="100px" width="100px"></td>
+  </tr>
+  <tr *ngFor="let m of mobiles2">
+    <td>{{ m.mobileName }}</td>
+    <td>{{ m.mobileCompany }}</td>
+    <td>{{ m.mobilePrice|currency:"USD" }}</td>
+    <td><img [src]="m.mobileImage" height="100px" width="100px"></td>
+  </tr>
+  <tr *ngFor="let m of mobiles3">
+    <td>{{ m.mobileName }}</td>
+    <td>{{ m.mobileCompany }}</td>
+    <td>{{ m.mobilePrice|currency:"USD" }}</td>
+    <td><img [src]="m.mobileImage" height="100px" width="100px"></td>
+  </tr>
+</table>

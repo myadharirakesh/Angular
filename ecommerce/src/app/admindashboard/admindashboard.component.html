@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 rakesh">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="mynav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a routerLink="/admin/home" class="nav-link">Dashboard</a></li>
+                                <li class="nav-item"><a routerLink="/admin/add" class="nav-link">Add products</a></li>
+                                <li class="nav-item"><a routerLink="/admin/products" class="nav-link">Products</a></li>
+                                <li class="nav-item"><a routerLink="/" class="nav-link">Logout</a></li>                             
+                            </ul>
+                        </div>    
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

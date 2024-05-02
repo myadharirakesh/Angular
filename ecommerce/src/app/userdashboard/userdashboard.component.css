@@ -1,0 +1,27 @@
+.bg-bhaskar{
+    background-color:darkblue;;
+}
+.navbar{
+    width:250px;
+    padding:15px;
+    padding-bottom:500px;
+    position: absolute;
+    left:0px;
+}
+.navbar-nav{
+    margin-top:50px;
+}
+.nav-item{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+.logo{
+    width:120px;
+    border-radius:70px;
+}
+.dash{
+    position:fixed;
+}
+.cont{
+    margin-left: 270px;;
+}

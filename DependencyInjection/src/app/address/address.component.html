@@ -1,0 +1,37 @@
+<div class=""container>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <h1>Address</h1>
+            <div class="form-group">
+                <label class="form-label">Village Name</label>
+                <input type="text" class="form-control" [(ngModel)]="villagename">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Mandal Name</label>
+                <input type="text" class="form-control" [(ngModel)]="mandal">
+            </div>
+            <div class="form-group">
+                <label class="form-label">District Name</label>
+                <input type="text" class="form-control" [(ngModel)]="district">
+            </div>
+            <div class="form-group">
+                <label class="form-label">State</label>
+                <input type="text" class="form-control" [(ngModel)]="state">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Pincode</label>
+                <input type="number" class="form-control" [(ngModel)]="pincode">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" (click)="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <h4>{{status}}</h4>
+    </div>
+</div>
+
+

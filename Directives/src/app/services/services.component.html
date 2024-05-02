@@ -1,0 +1,66 @@
+<p>Ram pothineni</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let m of mobiles">
+            <div class="card-header">
+                <img [src]="m.mobileImage" width="200px" height="200px">
+            </div>
+            <div class="card-body">
+                <h4>{{m.mobileName}}</h4>
+                <h4>{{m.mobileCompany}}</h4>
+                <h4>{{m.mobilePrice|currency:"USD"}}</h4>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-warning">Add To Cart</button>
+            </div>
+        </div>
+
+
+        <div class="col-md-3" *ngFor="let m of mobiles1">
+            <div class="card-header">
+                <img [src]="m.mobileImage" width="200px" height="200px">
+            </div>
+            <div class="card-body">
+                <h4>{{m.mobileName}}</h4>
+                <h4>{{m.mobileCompany}}</h4>
+                <h4>{{m.mobilePrice|currency:"USD"}}</h4>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-warning">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3" *ngFor="let m of mobiles2">
+            <div class="card-header">
+                <img [src]="m.mobileImage" width="200px" height="200px">
+            </div>
+            <div class="card-body">
+                <h4>{{m.mobileName}}</h4>
+                <h4>{{m.mobileCompany}}</h4>
+                <h4>{{m.mobilePrice|currency:"USD"}}</h4>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-warning">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3" *ngFor="let m of mobiles3">
+            <div class="card-header">
+                <img [src]="m.mobileImage" width="200px" height="200px">
+            </div>
+            <div class="card-body">
+                <h4>{{m.mobileName}}</h4>
+                <h4>{{m.mobileCompany}}</h4>
+                <h4>{{m.mobilePrice|currency:"USD"}}</h4>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-warning">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <h1>Login Form</h1>
+            <div class="form-group">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" [(ngModel)]="username">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" (click)="checkLogin()">Login</button>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+</div>
+
+

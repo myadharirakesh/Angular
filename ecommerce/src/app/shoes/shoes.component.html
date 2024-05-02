@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <ng-container *ngFor="let p of product">
+            <div class="col-md-4" *ngIf="p.productName=='shoes'">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="p.productImage" class="=card-img-top" height="200" width="250">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">{{p.productPrice | currency:'INR'}}</p>
+                        <button class="btn btn-danger">{{p.productOffer}}</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" (click)="addtoCart(p)"> <i class="fas fa-shopping-cart"></i >Add to cart</button>
+                            
+                    </div>
+                </div>
+            </div>
+
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="row">
+        <ng-container>
+            <div class="col-md-4" *ngFor="let p of product">
+        <!-- <div class="col-md-4" *ngIf="p.productName=='mobile'"> -->
+            <div class="card">
+                <div class="card-header">
+                    <img [src]="p.productImage" class="card-img-top" height="270" width="150">
+                </div>
+                <div class="card-body" *ngIf="!p.productEdit">
+                    <p class="card-title">{{p.productDescription}}</p>
+                    <h4 class="card-text">Company:{{p.productCompany}}</h4>
+                    <p class="card-text">Price:{{p.productPrice | currency:'INR'}}</p>
+                </div>
+                <div class="card-body" *ngIf="p.productEdit">
+                    <input type="text" name="p" [(ngModel)]="p.productDescription">
+                    <input type="text" name="p" [(ngModel)]="p.productCompany">
+                    <input type="text" name="p" [(ngModel)]="p.productPrice">
+                </div>
+               <div>
+                <button class="btn btn-warning" *ngIf="!p.productEdit" (click)="toUpdate(p)">Edit</button> 
+                <button class="btn btn-warning"  *ngIf="p.productEdit" (click)="toSave(p)">Save</button>
+                <button class="btn btn-danger"  (click)="delete(p)">Delete</button>  
+               </div>
+            </div>
+           
+        </div>
+     
+    </ng-container>
+    </div>
+</div> 
+

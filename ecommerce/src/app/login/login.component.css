@@ -1,0 +1,27 @@
+@media only screen and (min-width:700px){
+    .container-fluid{
+        background-image:url('/assets/image1.jpg');
+        background-size: cover;
+        background-repeat:no-repeat;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        height:800px;
+        overflow: hidden;
+    }
+   .rakhi{
+    margin-left: -400px;
+   }
+   .mydiv{
+    margin-top: 20px;
+   }
+
+}
+@media only screen and (max-width:700px){
+   .container-fluid{
+    background-image: url('/assets/image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+   }
+}

@@ -1,0 +1,17 @@
+<p>RakhiBhai</p>
+<div *ngIf="num%2==0;else bs">
+    <h1>{{num}} is even</h1>
+</div>
+<ng-template #bs>
+    <h1>{{num}} is odd</h1>
+</ng-template>
+
+<!-- <div *ngFor="let i of arr">
+    <h1>{{i}}</h1>
+</div> -->
+
+<div *ngFor="let a of arr">
+    <div *ngIf="a%2==0">
+        <p>{{a}} which are divisible by 2</p>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 dash">
+            <nav class="navbar navbar-expand-md  navbar-dark bg-bhaskar flex-md-column flex-row align-items-start">
+                <a class="navbar-brand">{{username | uppercase}}'s dashboard<br>
+                    <img src="/assets/logo.jpg" class="logo">
+                </a>
+                <button class="navbar-toggler" type="submit"data-bs-toggle="collapse" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="sidebar">
+                        <ul class="navbar-nav flex-md-column flex-row w-100 justify-content-between">
+                            <li class="nav-item"><a routerLink="/user/home" class="nav-link">Dashboard</a></li>
+                            <li class="nav-item"><a routerLink="/user/add" class="nav-link">Add products</a></li>
+                            <li class="nav-item"><a routerLink="/user/book" class="nav-link">Books</a></li>  
+                            <li class="nav-item"><a routerLink="/user/cloths" class="nav-link">Cloths</a></li> 
+                            <li class="nav-item"><a routerLink="/user/shoes" class="nav-link">Shoes</a></li>
+                            <li class="nav-item"><a routerLink="/user/cart" class="nav-link">Cart <span *ngIf="cartlength!=0" class="badge bg-danger text-white">{{cartlength}}</span></a></li>
+                            <li class="nav-item"><a routerLink="/" class="nav-link">logout</a></li>    
+                                   
+                        </ul>
+                </div>
+            </nav>     
+        </div>
+        <div class="col-md-9 cont">
+            <router-outlet></router-outlet>
+        </div>
+    
+    </div>
+    </div>
+
+
+
+
+
+
+    

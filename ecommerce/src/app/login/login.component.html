@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div class="col-md-8">
+            <img src="/assets/image1.jpg" width="700" height="700">
+        </div> -->
+            <div class="col-md-4">
+               
+                <form action="" (ngSubmit)="checkLogin()" class="rakhi">
+                    <h1>Get started</h1>
+                    <div class="form-group">
+                        <label class="form-label">username</label>
+                        <input type="text" class="form-control" name="username"  [(ngModel)]="username" required="true"> 
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">password</label>
+                        <input type="password" class="form-control" name="password" [(ngModel)]="password" required="true"> 
+                    </div>
+                    <div class="form-group mydiv">
+                        <button class="btn btn-primary btn-large" type="submit" >Submit</button>
+                        <button class="btn btn-warning btn-large" type="reset">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            
+    </div>
+</div>
+
